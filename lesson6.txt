@@ -1,0 +1,29 @@
+i = 0 
+s = 1 
+k = 1 
+while i >= 0:
+    a = int(input())
+    if a == 0:
+        break
+    if a == i:
+        s += 1
+        if s > k:
+            k = s
+    else:
+        s = 1
+        i = a
+print(k)
+
+from math import* 
+i = 0 
+x = 0 
+x2 = 0 
+n = 0 
+while i >= 0:
+    a = int(input())
+    if(a == 0):
+        break
+    x += a
+    x2 += a**2
+    n += 1 
+print(sqrt((x2 - 2*x*x/n + x**2/n)/(n-1)))
